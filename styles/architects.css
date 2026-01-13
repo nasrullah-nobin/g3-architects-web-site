@@ -214,15 +214,26 @@ footer {
 /* responsive media query */
 @media screen and (max-width: 576px) {
     .nav-bar,
-    .nav-links,
     .teams,
     .features {
         flex-direction: column;
+    }
+    .nav-links {
+        font-size: 1.25rem;
+        margin-top: 20px;
+        justify-content: space-between;
+    }
+    .nav-link {
+        font-size: 1.25rem;
     }
     .team-img-container,
     .facts-container,
     .sponsors-company {
         grid-template-columns: 1fr;
+    }
+    .teams button {
+        display: block;
+        margin: 32px auto 0;
     }
     .facts-container {
         justify-items: center;
@@ -239,6 +250,7 @@ footer {
         margin-top: 20px;
         margin-left: 20px;
         padding: 35px 30px;
+        font-size: 1rem;
     }
     footer {
         width: 100%;
